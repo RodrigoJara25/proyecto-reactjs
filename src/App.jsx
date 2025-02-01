@@ -10,7 +10,7 @@ function App() {
     <>
       <div className='App'>
         <NavBar/>
-        <ItemListContainer saludo="Bienvenido a la tienda"/>
+        <ItemListContainer saludo="Encuentra la camiseta de tu equipo favorito!"/>
       </div>
     </>
   )
