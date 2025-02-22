@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import './Item.css'
 
 // Este componente es el que se encarga de mostrar toda la informacion
 // de cada producto
 function Item({prod}) {
     return (
-        <div>
+        <div className="divItem">
             <div key={prod.id}>
                 <h3>{prod.nombre}</h3>
                 <h4>{prod.temporada}</h4>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProductsById } from "../../asyncProducts";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import './ItemDetailsContainer.css'
 
 function ItemDetailsContainer({}) {
     
@@ -20,7 +21,7 @@ function ItemDetailsContainer({}) {
     }, [itemId])
 
     return (
-        <div>
+        <div className="divItemDetailsContainer">
             <ItemDetail product={productDetails}/>
         </div>
     )

@@ -32,9 +32,19 @@ function ItemListContainer({greeting}){
 
     }, [categoryId])
 
+    const titulo = () => {
+        if (categoryId === "club") {
+            return "LOS MEJORES DE EUROPA"
+        } else if(categoryId === "clubL1") {
+            return "APOYA A TU EQUIPO"
+        } else{
+            return "CAMPEONES DEL MUNDO"
+        }
+    }
+
     return (
         <div className="divItemListContainer">
-            <h1>{greeting}</h1>
+            <h1>{greeting ? greeting : titulo()}</h1>
             <ItemList products={ products }/>
         </div>
     )

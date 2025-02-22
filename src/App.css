@@ -1,6 +1,7 @@
 .bgApp{
-    background: linear-gradient(to bottom, #000000, #111111 30%, #000000 60%, #FFD700);
+    height: 100%;
     margin: 0;
-    color: #FFFFFF;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000 70%, #FFD700);
+    background-attachment: fixed; /* Fija el fondo para evitar cortes */
 }
