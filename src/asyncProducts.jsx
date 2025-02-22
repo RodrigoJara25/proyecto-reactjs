@@ -183,7 +183,7 @@ export const getProductsById = (productId) => {
     return new Promise ((resolve) => {
         setTimeout(() => {
             resolve(
-                products.find((prod) => prod.id === productId)
+                products.find((prod) => prod.id === productId)  
                 // La promesa devuelve un producto con el productId mandado
             )
         }, 500);
