@@ -112,7 +112,7 @@ const products = [
   {
     id: 11,
     nombre: "Universitario de Deportes",
-    categoria: "club",
+    categoria: "clubL1",
     pais: "Perú",
     liga: "Liga 1",
     temporada: "2023",
@@ -123,7 +123,7 @@ const products = [
   {
     id: 12,
     nombre: "Alianza Lima",
-    categoria: "club",
+    categoria: "clubL1",
     pais: "Perú",
     liga: "Liga 1",
     temporada: "2023",
@@ -134,7 +134,7 @@ const products = [
   {
     id: 13,
     nombre: "Sporting Cristal",
-    categoria: "club",
+    categoria: "clubL1",
     pais: "Perú",
     liga: "Liga 1",
     temporada: "2023",
@@ -145,7 +145,7 @@ const products = [
   {
     id: 14,
     nombre: "FBC Melgar",
-    categoria: "club",
+    categoria: "clubL1",
     pais: "Perú",
     liga: "Liga 1",
     temporada: "2023",
@@ -156,7 +156,7 @@ const products = [
   {
     id: 15,
     nombre: "Cienciano",
-    categoria: "club",
+    categoria: "clubL1",
     pais: "Perú",
     liga: "Liga 1",
     temporada: "2023",

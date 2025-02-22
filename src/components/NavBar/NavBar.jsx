@@ -6,13 +6,13 @@ function NavBar(){
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="https://marketplace.canva.com/EAFvDRwEHHg/1/0/1600w/canva-colorful-abstract-online-shop-free-logo-cpI8ixEpis8.jpg" alt="" />
+                <a href="/"><img src="https://cdn-icons-png.freepik.com/512/1031/1031497.png" alt="" /></a>
             </div>
             <div>
                 <ul className="ulnavbar">
-                    <li className="linavbar"><a href="">Selecciones</a></li>
-                    <li><a href="">Clubes</a></li>
-                    <li><a href="">Liga Local</a></li>
+                    <li className="linavbar"><a href="/category/selección">Selecciones</a></li>
+                    <li><a href="/category/club">Clubes</a></li>
+                    <li><a href="/category/clubL1">Liga Local</a></li>
                 </ul>
             </div>
             <div className="carrito">
