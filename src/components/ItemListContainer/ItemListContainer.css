@@ -1,0 +1,25 @@
+.divItemListContainer{
+    width: 80%;
+    margin: auto;
+
+    & h1{
+        font-size: 40px;
+        font-weight: bold;
+        color: #FFD700; /* Dorado */
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: rgba(255, 215, 0, 0.1); /* Fondo dorado muy sutil */
+        border: 2px solid #FFD700; /* Borde dorado */
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #FFD700; /* Se vuelve dorado sólido */
+            color: #000; /* Cambia el texto a negro */
+            transform: scale(1.05); /* Efecto de agrandamiento */
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        }
+    }
+}

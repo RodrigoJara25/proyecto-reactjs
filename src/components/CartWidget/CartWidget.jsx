@@ -3,7 +3,7 @@ import './CartWidget.css'
 
 function CartWidget(){
     return (
-        <div style={{display: "flex", alignContent: "center", justifyContent: "center"}}>
+        <div className="cart-icon">
             <FaShoppingCart />
             
         </div>

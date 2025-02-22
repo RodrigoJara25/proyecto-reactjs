@@ -1,45 +1,58 @@
-.navbar{
+.navbar {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, black, #B8860B); /* Degradado negro a dorado */
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    filter: drop-shadow(0px 0px 8px rgba(255, 215, 0, 0.7));
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    display: flex;
     align-items: center;
     justify-content: center;
-
-    /* estilos */
-    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFD700, #B8860B);
+    padding: 5px;
 }
 
-.logo{
-    height: 70px;
-    width: 16px;
-    object-fit: contain;
-    margin-right: auto;
-    padding: 30px;
-}
 
-.logo img{
-    height: 50px;
-    width: 50px;
-}
-
-.ulnavbar{
+.ulnavbar {
+    list-style: none;
     display: flex;
     gap: 20px;
-    list-style: none;
+    padding: 0;
 }
 
-a{
-    color: black;
+.linavbar a, .ulnavbar li a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
 }
 
-.carrito{
-    margin-left: auto;
-    padding: 30px;
-    width: 50px;
+.linavbar a:hover, .ulnavbar li a:hover {
+    background: rgba(255, 215, 0, 0.5); /* Dorado translúcido */
+    transform: scale(1.1);
+}
+
+.carrito {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    border: 1px solid black;
-    background-color: red;
 }

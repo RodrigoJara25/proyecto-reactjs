@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 function Item({prod}) {
     return (
         <div>
-            <img src={prod.imagen} alt={prod.categoria} />
-            <div>
+            <div key={prod.id}>
                 <h3>{prod.nombre}</h3>
                 <h4>{prod.temporada}</h4>
+                <img src={prod.imagen} alt={prod.categoria} style={{width: 200, height: 200}}/>
                 <h4>{prod.liga}</h4>
             </div>
             <Link to={`/item/${prod.id}`} >
