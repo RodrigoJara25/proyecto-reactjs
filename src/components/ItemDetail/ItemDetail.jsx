@@ -1,18 +1,32 @@
+import { useState } from 'react';
 import './ItemDetail.css' 
 
 function ItemDetail({product}) {
-    console.log(product)
+    const [cantidad, setCantidad] = useState(0);
+    const sumarCantidad = () => {
+        setCantidad(prev => prev + 1)
+    }
+    const restarCantidad = () => {
+        if (cantidad > 0) {
+            setCantidad(prev => prev - 1)
+        }
+    }
+    const agregarAlCarrito = () => {
+        if (cantidad > 0) {
+            alert("Producto agregado al carrito!")
+        }
+    }
     return (
         <div className='divItemDetail'>
             <h3>{product.nombre}</h3>
             <h4>Temporada: {product.temporada}</h4>
             <img src={product.imagen} alt={product.categoria} />
             <div className='cantidadProducto'>
-                <button>+</button>
-                <p>1</p>
-                <button>-</button>
+                <button onClick={sumarCantidad}>+</button>
+                <p>{cantidad}</p>
+                <button onClick={restarCantidad}>-</button>
             </div>
-            <button className='btnAgregarCarrito'>Agregar al carrito</button>
+            <button className='btnAgregarCarrito' onClick={agregarAlCarrito}>Agregar al carrito</button>
         </div>
     )
 }
