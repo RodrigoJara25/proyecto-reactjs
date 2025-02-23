@@ -1,7 +1,3 @@
 .bgApp{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #000000 70%, #FFD700);
-    background-attachment: fixed; /* Fija el fondo para evitar cortes */
+    height: 200%;
 }

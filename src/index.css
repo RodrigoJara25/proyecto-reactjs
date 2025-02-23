@@ -1,8 +1,7 @@
-
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #FFD700, #121212); /* Degradado dorado a negro */
-    background-attachment: fixed; /* Fija el fondo para evitar cortes */
+    background: linear-gradient(to bottom, #000000 60%, #FFD700 100%); /* Negro más fuerte y dorado al final */
+    background-attachment: fixed; /* Fija el fondo */
 }
