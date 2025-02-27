@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { CartContext } from '../../context/CartContext';
 import './ItemDetail.css' 
 
 function ItemDetail({product}) {
+
     const [cantidad, setCantidad] = useState(0);
+    const { addToCart } = useContext(CartContext);
+
     const sumarCantidad = () => {
         setCantidad(prev => prev + 1)
     }
@@ -13,7 +17,7 @@ function ItemDetail({product}) {
     }
     const agregarAlCarrito = () => {
         if (cantidad > 0) {
-            alert("Producto agregado al carrito!")
+            addToCart({product}, cantidad);
         }
     }
     return (
@@ -21,6 +25,7 @@ function ItemDetail({product}) {
             <h3>{product.nombre}</h3>
             <h4>Temporada: {product.temporada}</h4>
             <img src={product.imagen} alt={product.categoria} />
+            <p className='pPrecio'>Precio: {product.precio}</p>
             <div className='cantidadProducto'>
                 <button onClick={sumarCantidad}>+</button>
                 <p>{cantidad}</p>

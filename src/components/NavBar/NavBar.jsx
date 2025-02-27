@@ -1,4 +1,5 @@
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 import './NavBar.css'
 
 function NavBar(){
@@ -6,17 +7,16 @@ function NavBar(){
     return (
         <nav className="navbar">
             <div className="logo">
-                <a href="/"><img src="https://cdn-icons-png.freepik.com/512/1031/1031497.png" alt="" /></a>
+                <Link to="/"><img src="https://cdn-icons-png.freepik.com/512/1031/1031497.png" alt="" /></Link>
             </div>
             <div>
                 <ul className="ulnavbar">
-                    <li className="linavbar"><a href="/category/selección">Selecciones</a></li>
-                    <li><a href="/category/club">Clubes</a></li>
-                    <li><a href="/category/clubL1">Liga Local</a></li>
+                    <li className="linavbar"><Link to="/category/selección">Selecciones</Link></li>
+                    <li className="linavbar"><Link to="/category/club">Clubes</Link></li>
+                    <li className="linavbar"><Link to="/category/clubL1">Liga Local</Link></li>
                 </ul>
             </div>
             <div className="carrito">
-                {/* Muestra el Icono del Carrito */}
                 <CartWidget/>
             </div>
         </nav>

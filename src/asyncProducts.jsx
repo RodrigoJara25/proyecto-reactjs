@@ -9,6 +9,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto/05596cc5f7724da8946f5362652319d0_9366/Camiseta_Local_Seleccion_Argentina_24_Blanco_IP8409_21_model.jpg",
+    precio: 120.0,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const products = [
     tipo: "local",
     fabricante: "Nike",
     imagen: "https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwa89cefa7/images/hi-res/196969877491_1_20240430-mrtPeru.jpg",
+    precio: 120.0,
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const products = [
     tipo: "local",
     fabricante: "Nike",
     imagen: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/86087b33-bcf3-44c7-ad14-7f6d42aff283/FFF+MNK+DFADV+MATCH+JSYSS+HM.png",
+    precio: 120.0,
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://perufc.com/wp-content/uploads/2024/05/1036-1.jpg",
+    precio: 120.0,
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/eb28d02c163841b0b5de4d2fbbd7c296_9366/Camiseta_Local_Espana_24_Ninos_Rojo_IP9351_01_laydown.jpg",
+    precio: 120.0,
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto/78b62417f1e042aeb25e3353d278de3b_9366/Camiseta_local_Real_Madrid_24-25_Authentic_Blanco_IX8095_HM1.jpg",
+    precio: 120.0,
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ const products = [
     tipo: "local",
     fabricante: "Nike",
     imagen: "https://store.fcbarcelona.com/cdn/shop/files/25100BWC_1_8fe152c1-6f92-4367-a095-a2931a7b1788.jpg?v=1733397701&width=1946",
+    precio: 120.0,
   },
   {
     id: 8,
@@ -86,6 +93,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bb34e2d7ef774076b2384c4aecc3c090_9366/Camiseta_Local_Manchester_United_24-25_Rojo_IU1397_HM1.jpg",
+    precio: 120.0,
   },
   {
     id: 9,
@@ -97,6 +105,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto/d80ce170b8ca4456a62bbc45f56eae09_9366/Camiseta_Local_FC_Bayern_24-25_Rojo_IT8511_HM30.jpg",
+    precio: 120.0,
   },
   {
     id: 10,
@@ -108,6 +117,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2b119c8986e84f93bb12f461e3c5f39c_9366/Camiseta_Local_Juventus_24-25_Blanco_IS8002_HM1.jpg",
+    precio: 120.0,
   },
   {
     id: 11,
@@ -119,6 +129,7 @@ const products = [
     tipo: "local",
     fabricante: "Marathon",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfUAnaA0ydgfyNLbxLcO6oZ2reeug57fFoNw&s",
+    precio: 120.0,
   },
   {
     id: 12,
@@ -130,6 +141,7 @@ const products = [
     tipo: "local",
     fabricante: "Nike",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8eZn3h9C0K26UcuWYQsW5gY7GmA20Xulcog&s",
+    precio: 120.0,
   },
   {
     id: 13,
@@ -141,6 +153,7 @@ const products = [
     tipo: "local",
     fabricante: "Adidas",
     imagen: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,e_sharpen:95,w_2000,h_2000/global/763975/01/mod01/fnd/PER/fmt/png/Camiseta-Sporting-Cristal-local-para-hombre",
+    precio: 120.0,
   },
   {
     id: 14,
@@ -152,6 +165,7 @@ const products = [
     tipo: "local",
     fabricante: "Walon",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJzOF6j_g0pktwP9LJuRgLQSpHobw6nOOn3A&s",
+    precio: 120.0,
   },
   {
     id: 15,
@@ -163,6 +177,7 @@ const products = [
     tipo: "local",
     fabricante: "Marathon",
     imagen: "https://http2.mlstatic.com/D_NQ_NP_758067-MPE78998369712_092024-O.webp",
+    precio: 120.0,
   },
 ];
 

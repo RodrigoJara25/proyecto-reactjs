@@ -29,6 +29,24 @@
         margin-bottom: 15px;
     }
 
+    .pPrecio {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #d4af37; /* Dorado */
+        text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.8);
+    }
+
+    .pPrecio::before {
+        content: "💰"; /* Ícono relacionado con precio */
+        margin-right: 8px;
+        color: #d4af37;;
+    }
+
+    .pPrecio:hover {
+        color: #fff; /* Blanco para resaltar al pasar el cursor */
+        text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+    }
+
     & .cantidadProducto{
         display: flex;
         flex-direction: row;
