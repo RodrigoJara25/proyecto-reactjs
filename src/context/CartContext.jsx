@@ -9,11 +9,15 @@ export function CartContextProvider({children}) {
     const [cartList, setCartList] = useState([]);
 
     const addToCart = (item, cantidad) => {
-        setCartList([...cartList, {
-            nombre: item.nombre,
-            precio: item.precio,
-            cantidad: cantidad
-        }]);
+        let index = cartList.findIndex((itemCart) => item.id === itemCart.id);
+        if (index !== -1) {
+            // Se crea una copia del array original para respetar la inmutabilidad del estado en React
+            const listaActualizada = [...cartList];
+            listaActualizada[index].cantidad += cantidad;
+            setCartList(listaActualizada);
+        } else {
+            setCartList([...cartList, {...item, cantidad}]);
+        }
     };
 
     const removeList = () => {

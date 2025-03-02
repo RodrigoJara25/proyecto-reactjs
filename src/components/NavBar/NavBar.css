@@ -5,6 +5,7 @@
     background: linear-gradient(90deg, black, #B8860B); /* Degradado negro a dorado */
     padding: 15px 40px;
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    height: 30%;
 }
 
 .logo img {

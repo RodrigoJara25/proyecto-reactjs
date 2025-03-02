@@ -1,6 +1,7 @@
 .divItemListContainer{
     width: 80%;
     margin: auto;
+    padding-bottom: 30px;
 
     & h1{
         font-size: 40px;
