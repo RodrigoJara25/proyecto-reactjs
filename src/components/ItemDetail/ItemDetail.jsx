@@ -17,7 +17,7 @@ function ItemDetail({product}) {
     }
     const agregarAlCarrito = () => {
         if (cantidad > 0) {
-            addToCart({product}, cantidad);
+            addToCart(product, cantidad);
         }
     }
     return (
