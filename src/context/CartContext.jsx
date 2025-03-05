@@ -25,7 +25,7 @@ export function CartContextProvider({children}) {
     };
 
     const deleteItem = () => {
-
+        
     };
 
     const totalProductos = () => {

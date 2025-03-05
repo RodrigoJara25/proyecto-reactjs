@@ -1,0 +1,128 @@
+.cart-container {
+    background: radial-gradient(circle, rgba(255,215,0,0.2) 10%, black 90%);
+    color: gold;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    /* width: 100%; */
+}
+
+.cart-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.cart-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20%;
+    height: 80%;
+}
+
+.cart-table th, .cart-table td {
+    border: 2px solid gold;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.cart-table th {
+    background-color: rgba(255, 215, 0, 0.2);
+    font-weight: bold;
+}
+
+.cart-table td:last-child, 
+.cart-table th:last-child {
+    border: none; /* Quita los bordes de la última columna */
+    background: transparent; /* Hace que herede el fondo del contenedor */
+}
+
+
+.cart-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid gold;
+}
+
+.delete-btn {
+    background-color: black; /* Fondo negro */
+    color: gold; /* Texto dorado */
+    border: 2px solid gold; /* Borde dorado */
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    &:hover{
+        background-color: gold; /* Fondo dorado al pasar el mouse */
+        color: black; /* Texto negro */
+        transform: scale(1.1); /* Pequeña animación de zoom */
+    }
+
+    & svg {
+        font-size: 20px; /* Tamaño del ícono */
+    }
+}
+
+.cart-total {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    gap: 20px;
+    width: 100vw; /* Se asegura de ocupar todo el ancho de la pantalla */
+    background: black;
+    color: gold;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    box-shadow: 0px -4px 10px rgba(255, 215, 0, 0.3);
+    border-top: 3px solid gold;
+    box-sizing: border-box; /* Evita que el padding cause desbordes */
+    overflow: hidden; /* Asegura que no haya contenido desbordando */
+    max-width: 100vw; /* Previene que crezca más de la pantalla */
+    height: auto;
+
+    & button {
+        background-color: gold;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 12px 20px;
+        border: 2px solid gold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-left: 15px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+            background-color: #e6c200; /* Dorado más oscuro en hover */
+            border-color: #e6c200;
+            transform: scale(1.05);
+        }
+    }
+}
+
+
