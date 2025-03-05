@@ -24,8 +24,10 @@ export function CartContextProvider({children}) {
 
     };
 
-    const deleteItem = () => {
-        
+    const deleteItem = (item) => {
+        let index = item.id;
+        const listaActualizada = cartList.filter(producto => producto.id !== index);
+        setCartList(listaActualizada);
     };
 
     const totalProductos = () => {
