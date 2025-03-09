@@ -97,3 +97,33 @@
         }
     }
 }
+
+.pAgregado {
+    color: #ffd700; /* Texto dorado */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btnIrCarrito {
+    background: #ffd700; /* Dorado */
+    color: #000; /* Negro */
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #ffd700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 10px auto;
+}
+
+.btnIrCarrito:hover {
+    background: #000; /* Negro al pasar el mouse */
+    color: #ffd700; /* Texto dorado */
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}

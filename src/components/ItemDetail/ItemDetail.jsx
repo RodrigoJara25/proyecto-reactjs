@@ -1,11 +1,14 @@
 import { useContext, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 import './ItemDetail.css' 
 
 function ItemDetail({product}) {
 
     const [cantidad, setCantidad] = useState(0);
     const { addToCart } = useContext(CartContext);
+
+    const [agregado, setAgregado] = useState(false);
 
     const sumarCantidad = () => {
         setCantidad(prev => prev + 1)
@@ -19,8 +22,21 @@ function ItemDetail({product}) {
         if (cantidad > 0) {
             // del CartContext
             addToCart(product, cantidad);
+            setAgregado(true);
         }
     }
+
+    if (agregado == true) {
+        return (
+            <div className='divItemDetail'>
+                <p className='pAgregado'>Producto agregado</p>
+                <Link to='/cart' style={{textDecoration:'none'}}>
+                    <button className='btnIrCarrito'>Ir al carrito</button>
+                </Link>
+            </div>
+        )
+    }
+
     return (
         <div className='divItemDetail'>
             <h3>{product.nombre}</h3>
