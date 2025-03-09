@@ -37,9 +37,7 @@ function CartContainer() {
                             {cartList.map((item, index) => (
                                 <tr key={index}>
                                     <td>
-                                        <Link to={`/item/${item.id}`}>
-                                            <img className="cart-img" src={item.imagen} alt={item.nombre} />
-                                        </Link>
+                                        <img className="cart-img" src={item.imagen} alt={item.nombre} />
                                     </td>
                                     <td>{item.nombre}</td>
                                     <td>${item.precio}</td>
