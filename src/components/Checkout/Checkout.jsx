@@ -1,25 +1,29 @@
+import CheckoutForm from "../CheckoutForm/CheckoutForm";
+import "./Checkout.css";
 import { useState } from "react";
-import "./Checkout.css"
-function Checkout() {
-    
-    const [user, setUser] = useState({});
+import { Link } from "react-router-dom";
 
-    return(
-        <div className="checkout-wrapper">
-            <div className="checkout-container">
-                <h1>Checkout</h1>
-                <form className="checkout-form">
-                    <label htmlFor="name">Nombre</label>
-                    <input type="text" name="name" id="name" required/>
-                    <label htmlFor="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" required/>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" required/>
-                    <button type="submit" className="checkout-button">Enviar</button>
-                </form>
+
+function Checkout() {
+
+    const [loading, setLoading] = useState(false);
+    const [enviado, setEnviado] = useState(false);
+
+    if (enviado) {
+        return (
+            <div>
+                <h2 style={{color:"white"}}>¡Gracias por tu compra!</h2>
+                <Link to='/'>
+                    <button>Volver al inicio</button>
+                </Link>
             </div>
+        )
+    }
+
+    return (
+        <div>
+            {!loading ? <CheckoutForm setLoading={setLoading} setEnviado={setEnviado}/> : <h2 style={{color:"white"}}>Enviando boleta...</h2>}
         </div>
-        
     )
 }
 

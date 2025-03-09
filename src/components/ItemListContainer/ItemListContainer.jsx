@@ -26,7 +26,6 @@ function ItemListContainer({greeting}){
         .then(response=>{   // response es un objeto que tiene un array de documentos
             const productAdapted = response.docs.map(doc => {   // doc es un objeto que tiene un id y un data
                 const data = doc.data()
-                console.log(doc.id);
                 return {...data, id: doc.id}    // aca sobrescribo el id gerado manualmente por el id que me da firestore (para el url)
             })
             setProducts(productAdapted)

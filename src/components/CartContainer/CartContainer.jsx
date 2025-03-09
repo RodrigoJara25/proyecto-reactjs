@@ -14,7 +14,12 @@ function CartContainer() {
         <div className="cart-container">
             <h1>Carrito de Compras</h1>
             {cartList.length === 0 ? (
-                <p>No hay productos en el carrito</p>
+                <div>
+                    <p>No hay productos en el carrito</p>
+                    <Link to="/" style={{textDecoration: "none"}}>
+                        <button className="delete-btn">Volver a inicio</button>
+                    </Link>
+                </div>
             ) : (
                 <>
                     <table className="cart-table">

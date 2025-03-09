@@ -4,7 +4,6 @@ import './Item.css'
 // Este componente es el que se encarga de mostrar toda la informacion
 // de cada producto
 function Item({prod}) {
-    console.log(prod.id);
     
     return (
         <div className="divItem">
