@@ -1,14 +1,30 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./CartContainer.css"; // Importa los estilos
 import { FaTrash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Auth from "../../config/Auth";
 
 function CartContainer() {
     const { cartList, totalProductos, deleteItem, removeList } = useContext(CartContext);
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const navigate = useNavigate();
 
     // Calcular el total de la compra
     const total = cartList.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
+
+    // Funcion para la autenticacion
+    const handleAuthSuccess = (user) => {
+        setIsAuthenticated(true);
+    };
+
+    const handlePayment = () => {
+        if (!isAuthenticated) {
+            alert("Por favor, inicia sesión con Google para continuar.");
+            return;
+        }
+        navigate('/checkout');
+    };
 
     return (
         <div className="cart-container">
@@ -58,14 +74,13 @@ function CartContainer() {
                             <p>Limpiar carrito</p>
                         </button>
                         <p>PEN: {total}</p>
-                        <Link to="/checkout" className="link">
-                            <button>
-                                <p>Continuar ({totalProductos()})</p>
-                            </button>
-                        </Link>
+                        <button onClick={handlePayment}>
+                            <p>Continuar ({totalProductos()})</p>
+                        </button>
                     </div>
                 </>
             )}
+            {!isAuthenticated && <Auth onAuthSuccess={handleAuthSuccess}/> }
         </div>
     );
 }
