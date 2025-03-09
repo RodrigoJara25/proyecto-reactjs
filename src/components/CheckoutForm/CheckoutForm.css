@@ -1,0 +1,73 @@
+.checkout-container {
+    width: 500px;
+    padding: 30px;
+    background-color: black;
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.checkout-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    background-color: black;
+    color: gold;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.checkout-form input:focus {
+    border-color: #e6c200; /* Dorado más oscuro */
+    box-shadow: 0 0 8px rgba(230, 194, 0, 0.7);
+}
+
+.checkout-button {
+    background-color: gold;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.checkout-button:hover {
+    background-color: #e6c200; /* Dorado más oscuro en hover */
+    border-color: #e6c200;
+    transform: scale(1.05);
+}

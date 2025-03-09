@@ -1,4 +1,5 @@
 import { useState, useContext } from "react";
+import './CheckoutForm.css'
 import { CartContext } from '../../context/CartContext';
 import { db } from "../../config/firebase";
 import { collection, addDoc } from "firebase/firestore";

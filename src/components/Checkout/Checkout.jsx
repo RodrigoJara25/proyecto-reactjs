@@ -11,8 +11,8 @@ function Checkout() {
 
     if (enviado) {
         return (
-            <div>
-                <h2 style={{color:"white"}}>¡Gracias por tu compra!</h2>
+            <div className="checkout-div">
+                <h2>¡Gracias por tu compra!</h2>
                 <Link to='/'>
                     <button>Volver al inicio</button>
                 </Link>
@@ -22,7 +22,7 @@ function Checkout() {
 
     return (
         <div>
-            {!loading ? <CheckoutForm setLoading={setLoading} setEnviado={setEnviado}/> : <h2 style={{color:"white"}}>Enviando boleta...</h2>}
+            {!loading ? <CheckoutForm setLoading={setLoading} setEnviado={setEnviado}/> : <h2 className="generando-boleta">Generando pedido...</h2>}
         </div>
     )
 }
