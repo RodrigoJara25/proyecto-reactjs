@@ -23,10 +23,10 @@ function ItemDetail({product}) {
     }
     return (
         <div className='divItemDetail'>
-            <h3>{product?.nombre}</h3>
-            <h4>Temporada: {product?.temporada}</h4>
-            <img src={product?.imagen} alt={product?.categoria} />
-            <p className='pPrecio'>Precio: {product?.precio}</p>
+            <h3>{product.nombre}</h3>
+            <h4>Temporada: {product.temporada}</h4>
+            <img src={product.imagen} alt={product.categoria} />
+            <p className='pPrecio'>Precio: {product.precio}</p>
             <div className='cantidadProducto'>
                 <button onClick={sumarCantidad}>+</button>
                 <p>{cantidad}</p>

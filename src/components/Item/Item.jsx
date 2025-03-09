@@ -4,15 +4,17 @@ import './Item.css'
 // Este componente es el que se encarga de mostrar toda la informacion
 // de cada producto
 function Item({prod}) {
+    console.log(prod.id);
+    
     return (
         <div className="divItem">
-            <div key={prod.id}>
+            <div key={prod.id}> 
                 <h3>{prod.nombre}</h3>
                 <h4>{prod.temporada}</h4>
                 <img src={prod.imagen} alt={prod.categoria} style={{width: 200, height: 200}}/>
                 <h4>{prod.liga}</h4>
             </div>
-            <Link to={`/item/${prod.id}`} >
+            <Link to={`/item/${prod.id}`} > 
                 Ver Detalles
             </Link>
         </div>
