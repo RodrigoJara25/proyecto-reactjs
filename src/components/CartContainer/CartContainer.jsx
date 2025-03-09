@@ -3,7 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import "./CartContainer.css"; // Importa los estilos
 import { FaTrash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import Auth from "../../config/Auth";
+import Auth from "../../config/Auth/Auth";
 
 function CartContainer() {
     const { cartList, totalProductos, deleteItem, removeList } = useContext(CartContext);
