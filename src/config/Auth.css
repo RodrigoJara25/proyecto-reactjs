@@ -1,0 +1,27 @@
+.divAuth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.authBtn {
+    background-color: #b8860b; /* Dorado */
+    color: #000; /* Texto negro */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: 2px solid #b8860b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.authBtn:hover {
+    background-color: #daa520; /* Dorado más claro */
+    border-color: #daa520;
+}
+
+.authBtn:active {
+    background-color: #a67c00; /* Dorado oscuro */
+}

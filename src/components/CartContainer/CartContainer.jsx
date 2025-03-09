@@ -18,6 +18,7 @@ function CartContainer() {
         setIsAuthenticated(true);
     };
 
+    // Funcion para realizar el checkout
     const handlePayment = () => {
         if (!isAuthenticated) {
             alert("Por favor, inicia sesión con Google para continuar.");
@@ -78,9 +79,9 @@ function CartContainer() {
                             <p>Continuar ({totalProductos()})</p>
                         </button>
                     </div>
+                    {!isAuthenticated && <Auth onAuthSuccess={handleAuthSuccess}/> }
                 </>
             )}
-            {!isAuthenticated && <Auth onAuthSuccess={handleAuthSuccess}/> }
         </div>
     );
 }

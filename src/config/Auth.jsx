@@ -1,6 +1,7 @@
 import { signInWithPopup } from "firebase/auth";
 import { auth, googleProvider } from "./firebase";
 import { useState } from "react";
+import "./Auth.css"
 
 
 // Funcion para iniciar sesion con Google
@@ -15,12 +16,11 @@ function Auth({onAuthSuccess}){
             onAuthSuccess(user)
         } catch (error) {
             console.error(error);
-            
         }
     };
     return (
-        <div>
-            <button onClick={signInWithGoogle}>Iniciar sesión con Google</button>
+        <div className="divAuth">
+            <button className="authBtn" onClick={signInWithGoogle}>Iniciar sesión con Google</button>
         </div>
     );
 }
