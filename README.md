@@ -15,6 +15,8 @@ git clone https://github.com/RodrigoJara25/proyecto-reactjs.git
 cd proyecto-reactjs
 
 npm install
+
+npm run dev
 ```
 
 ## Contribución
@@ -33,9 +35,16 @@ Este proyecto es de libre uso.
 
 ## Caractersiticas
 
-- Facil de instalar
-- Interfaz amigable
-- Soporte multiplataforma
+- Navegación fácil por categorías de productos.
+- Vista detallada del producto con imágenes, descripción y precio.
+- Carrito de compras interactivo con opción para eliminar los productos.
+
+## Tecnologias Utilizadas
+
+- React + Vite
+- React Router para la navegación
+- React-icons
+- Firebase: Firestores y Authentication 
 
 ## Capturas de pantalla
 
