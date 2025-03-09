@@ -21,7 +21,7 @@ export function CartContextProvider({children}) {
     };
 
     const removeList = () => {
-
+        setCartList([]);
     };
 
     const deleteItem = (item) => {
@@ -35,7 +35,7 @@ export function CartContextProvider({children}) {
     }
     
     return (
-        <CartContext.Provider value={{cartList, addToCart, removeList, deleteItem, totalProductos}}>
+        <CartContext.Provider value={{cartList, addToCart, removeList, deleteItem, totalProductos, removeList}}>
             {children}
         </CartContext.Provider>
     );

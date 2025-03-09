@@ -5,7 +5,7 @@ import { FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function CartContainer() {
-    const { cartList, totalProductos, deleteItem } = useContext(CartContext);
+    const { cartList, totalProductos, deleteItem, removeList } = useContext(CartContext);
 
     // Calcular el total de la compra
     const total = cartList.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
@@ -24,7 +24,7 @@ function CartContainer() {
                                 <th>Nombre</th>
                                 <th>Precio Unitario</th>
                                 <th>Cantidad</th>
-                                <th>Total</th>
+                                <th>Subtotal</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -51,10 +51,15 @@ function CartContainer() {
                     </table>
 
                     <div className="cart-total">
-                        <p>PEN: {total}</p>
-                        <button>
-                            <p>Continuar ({totalProductos()})</p>
+                        <button onClick={removeList}> 
+                            <p>Limpiar carrito</p>
                         </button>
+                        <p>PEN: {total}</p>
+                        <Link to="/checkout" className="link">
+                            <button>
+                                <p>Continuar ({totalProductos()})</p>
+                            </button>
+                        </Link>
                     </div>
                 </>
             )}
